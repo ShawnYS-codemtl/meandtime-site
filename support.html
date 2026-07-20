@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support · me and time</title>
+    <style>
+      :root {
+        color-scheme: dark light;
+        --bg: #0b0b0d;
+        --card: #141416;
+        --text: #ececed;
+        --muted: #9a9aa0;
+        --rule: #26262a;
+        --accent: #d9b8a8;
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        letter-spacing: 0.1px;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 4.5rem 1.5rem 6rem;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 0.72rem;
+        color: var(--muted);
+        margin: 0 0 0.75rem;
+      }
+      h1 { font-size: 2rem; font-weight: 600; line-height: 1.2; margin: 0 0 0.4rem; }
+      .lead { font-size: 1.12rem; color: var(--text); margin: 0 0 2.5rem; }
+      h2 { font-size: 1.05rem; font-weight: 600; margin: 1.6rem 0 0.4rem; }
+      p { margin: 0 0 1rem; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      strong { font-weight: 600; }
+      .contact {
+        background: var(--card);
+        border: 1px solid var(--rule);
+        border-radius: 14px;
+        padding: 1.4rem 1.4rem;
+        margin: 0 0 2.5rem;
+      }
+      .contact p { margin: 0.2rem 0; }
+      .faq { border-top: 1px solid var(--rule); padding-top: 0.4rem; }
+      .faq h2 { color: var(--text); }
+      .faq p { color: var(--muted); }
+      footer {
+        margin-top: 4rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--rule);
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      footer a { color: var(--muted); text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">me and time</p>
+      <h1>Support</h1>
+      <p class="lead">
+        <em>me and time</em> is a private diary for watching your own face change over time —
+        take a selfie now and then, and scrub back through the months. Everything stays on your
+        device. Here's how to get help.
+      </p>
+
+      <div class="contact">
+        <p><strong>Email support</strong></p>
+        <p><a href="mailto:shawnyatsin.dev@gmail.com">shawnyatsin.dev@gmail.com</a></p>
+        <p style="color: var(--muted); margin-top: 0.6rem;">
+          Include your device model and iOS version so we can help faster. We usually reply
+          within a few days.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h2>Why can I only import 30 photos at a time?</h2>
+        <p>
+          When you import, iOS prepares the whole selection at once — and if even one photo in a
+          large batch can't be prepared, the entire import fails rather than part-succeeding.
+          Keeping each batch to 30 makes imports far more dependable, and 30 comfortably covers a
+          handpicked set of selfies. If you have more, just import in a few rounds — photos
+          already in your journal are skipped automatically, so you'll never get duplicates.
+        </p>
+
+        <h2>My import failed, or some photos wouldn't load — why?</h2>
+        <p>
+          Almost always it's photos that live in <strong>iCloud</strong> rather than on the
+          device itself. iOS can't hand those to the app until they've been downloaded, and in a
+          large selection a single un-downloadable photo can fail the whole batch. If that
+          happens, open those photos in the Photos app first so they download to the device, or
+          import fewer at a time.
+        </p>
+
+        <h2>Why does the scrubber or autoplay take a moment to sharpen in a large library?</h2>
+        <p>
+          To keep scrubbing smooth, the app pre-loads every frame ahead of time only for
+          collections of about <strong>500 photos or fewer</strong>. Beyond that, it loads frames
+          in a moving window around wherever you are, instead of all at once. That keeps large
+          libraries fast and responsive — the small trade-off is a brief "warming up" the first
+          time you reach a stretch: frames just ahead may take a beat to sharpen as you scrub or
+          when autoplay starts. It catches up quickly.
+        </p>
+
+        <h2>How do I back up my journal?</h2>
+        <p>
+          Open <strong>Settings → Export encrypted backup</strong>. You'll set a passphrase and
+          choose where to save the file. Keep the passphrase somewhere safe — it is not
+          recoverable, and the backup can't be opened without it.
+        </p>
+
+        <h2>How do I restore on a new phone?</h2>
+        <p>
+          Install the app, open <strong>Settings → Restore from backup</strong>, pick your backup
+          file, and enter its passphrase.
+        </p>
+
+        <h2>I paid for video export — how do I get it back after reinstalling?</h2>
+        <p>
+          Open <strong>Settings → Restore purchase</strong> (or tap <strong>Restore purchase</strong>
+          on the export screen). It re-checks your Apple ID and unlocks export again at no charge.
+        </p>
+
+        <h2>Is my data private?</h2>
+        <p>
+          Yes. There are no accounts and no servers we run. Your photos and notes live only on
+          your device and never leave it unless you export or save them yourself. See the
+          <a href="privacy.html">Privacy Policy</a> for details.
+        </p>
+
+        <h2>How do I delete my data?</h2>
+        <p>
+          Delete individual photos inside the app, or delete the app from your device to remove
+          everything it stored. Because nothing is uploaded, there is no server-side copy to
+          request removal of.
+        </p>
+      </div>
+
+      <footer>
+        <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </main>
+  </body>
+</html>
