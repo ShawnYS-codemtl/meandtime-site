@@ -76,7 +76,7 @@
     <main>
       <p class="eyebrow">me and time</p>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: July 20, 2026</p>
+      <p class="updated">Last updated: August 13, 2026</p>
 
       <p class="lead">
         <em>me and time</em> is a private diary for watching your own face change over time.
@@ -96,6 +96,11 @@
         that your photos, notes, or usage could be sent to, and the app contains no advertising
         or third-party tracking software.
       </p>
+      <p>
+        The app makes one connection of its own: on launch it asks its update service whether a
+        newer version of the app's code is available. That request carries only the app's version
+        and your device platform — never your photos, notes, or anything derived from your face.
+      </p>
 
       <h2>Where your data lives</h2>
       <ul>
@@ -106,15 +111,57 @@
           device has a passcode).
         </li>
         <li>
-          <strong>Not in your automatic cloud backup.</strong> The app's private photo store is
-          flagged to be excluded from automatic device backups, so an unencrypted copy is not
-          swept into your iCloud backup.
+          <strong>Your device backup.</strong> The app stores everything in its own private
+          container. If you have iCloud device backup switched on, that container is carried in
+          your device backup along with the rest of your phone, encrypted and held by Apple under
+          your account — we have no access to it. The passphrase-encrypted backup file you can
+          export from the app is the copy that is yours alone to move and keep.
+        </li>
+      </ul>
+
+      <h2>Face data</h2>
+      <p>
+        The app can line your eyes up from photo to photo, so that scrubbing through your journal
+        shows change rather than jitter. Here is exactly what that involves.
+      </p>
+      <ul>
+        <li>
+          <strong>It happens on your device.</strong> After a photo is saved, Google's on-device
+          face detection looks at that saved image and reports where the facial features are. The
+          model runs entirely on your phone; the photo is never uploaded, and no network request
+          is made to do it.
+        </li>
+        <li>
+          <strong>Only two points are kept.</strong> From that result the app keeps the position
+          of your left eye and your right eye — four numbers, stored next to the photo in the
+          app's local index on your phone. Nothing else is kept: no other facial points, no face
+          outline, no head angles, no expression estimate.
+        </li>
+        <li>
+          <strong>No faceprint, no recognition.</strong> The app does not build a face template,
+          faceprint, or any other biometric identifier, and does not recognise, match, verify, or
+          identify anyone. Two eye positions cannot do that. Nor does the app analyse your photos
+          for skin, health, age, mood, or appearance of any kind.
+        </li>
+        <li>
+          <strong>It never leaves your device.</strong> This data is not sent to us or to anyone
+          else, is not shared with any third party, and is not used for advertising or analytics.
+        </li>
+        <li>
+          <strong>It lives and dies with the photo.</strong> The eye positions are kept for as
+          long as you keep that photo. Delete the photo and they are deleted with it; delete the
+          app and everything goes. They are included only in an encrypted backup file that you
+          choose to create, which we never receive.
+        </li>
+        <li>
+          <strong>You can turn it off.</strong> Alignment is a setting in the app — switch it off
+          and each photo is shown in its original framing.
         </li>
       </ul>
 
       <h2>Device permissions and why the app asks</h2>
       <ul>
-        <li><strong>Camera</strong> — to take your daily selfie. Photos are saved into the app's private storage.</li>
+        <li><strong>Camera</strong> — to take your daily selfie. Photos are saved into the app's private storage, and are used on your device only, as described under “Face data” above.</li>
         <li><strong>Photo Library</strong> — only when you choose to import existing selfies into the journal, or to save a time-lapse video you export back to your Photos.</li>
         <li><strong>Notifications</strong> — only if you turn on the optional daily reminder. Reminders are scheduled locally on your device; nothing is sent to or from a server.</li>
         <li><strong>Face ID / biometrics</strong> — only if used to lock the app. Authentication happens entirely on your device; the app never receives your biometric data.</li>
